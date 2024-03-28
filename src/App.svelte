@@ -1,6 +1,8 @@
 <script>
     import AnswerButton from "./AnswerButton.svelte";
+    import TitlePage from "./TitlePage.svelte";
     import {getQuizdata} from "./quizdataFactory";
+    let showTitle = true;
     let currentScore = 0;
     let renzokuSeikai = 0;
     let quizdata = getQuizdata();
@@ -17,6 +19,8 @@
         quizdata = getQuizdata();
     };
 </script>
+
+<TitlePage></TitlePage>
 
 <main class="flex flex-col h-dvh">
     <!-- メニューバー -->
